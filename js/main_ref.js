@@ -1,6 +1,4 @@
 
-// $(document).ready(function(){
-
   function initMap(){
       //Miami
       var defaultLocation = {lat: 25.8042, lng: -80.1989};
@@ -27,11 +25,6 @@
         }
       };
 
-    //   google.maps.event.addDomListener(window, "load", function () {
-    //       map = new google.maps.Map(document.getElementById("map1"), {
-    //           center: new google.maps.LatLng(0, 0),
-    //           zoom: 14,
-    // });
 
       var map = new google.maps.Map(document.getElementById('map'), {
                 center: defaultLocation,
@@ -140,7 +133,7 @@
                     lng: position.coords.longitude
                   };
 
-                  console.log(pos)
+                  // console.log(pos)
                   // icon: icons['parking'].icon,
                   infoWindow.setPosition(pos);
                   infoWindow.setContent('You are Here.');
@@ -148,7 +141,6 @@
                   
                   //Set object do your current location
                   currentLocation = pos;
-                  // console.log(map.currentLocation)
                   getLocationName(currentLocation);
                   removeLoader()
                 }, function() {
@@ -166,6 +158,7 @@
             infoWindow.setContent(browserHasGeolocation ?
                                   'Error: The Geolocation service failed.' :
                                   'Error: Your browser doesn\'t support geolocation.');
+                                   removeLoader();
         }
 
         //https://gist.github.com/AmirHossein/92a0597b5f723b19c648
@@ -215,7 +208,6 @@
                           cityLbl = "this city";
                          }
                          $('.text-muted').html("Night Clubs in <span>"+city+"</span>" );
-                        // return city;
                     }
                 }
             });
@@ -229,16 +221,13 @@
            infowindow = new google.maps.InfoWindow();
               var service = new google.maps.places.PlacesService(map);
               if(random){
-                console.log(random)
                 currentLocation = random;
-                console.log(currentLocation)
               }
 
               //If the location is empty set the default to current
               if($.isEmptyObject(currentLocation)){
                  currentLocation = defaultLocation;
               }
-              // console.log(currentLocation);
 
               service.nearbySearch({
                 location: currentLocation,
@@ -251,7 +240,6 @@
                   for (var i = 0; i < results.length; i++) {
                     createMarker(results[i]);
                     clubNames.push(results[i].name);
-                    // console.log(results[i]);
 
                   }
                 }
@@ -309,7 +297,6 @@
                   place.price_level == "n/a";
                 }
 
-                // var clubName = '<span class="c-name">'+place.name+'</span>'+domLight+'<span id="more">+</span>';
                 var clubName = $('<span class="c-name">'+place.name+'</span><span id="more"><i class="fa fa-plus-square" aria-hidden="true"></i></span>');
                 li.append(clubName);
 
@@ -329,9 +316,6 @@
 
                 var infoFave = $('<div id="heart"><i class="fa fa-heart-o" aria-hidden="true"></i></div>')
                 infoAddy.append(infoFave);
-
-                // console.log(place["opening_hours"]["open_now"])
-                // console.log(Object.keys(place));
 
                  /* event , target, handler */
                 $(li).on('click', '#more' , function() {
@@ -355,7 +339,6 @@
                     });
 
                 google.maps.event.addListener(marker, 'click', function() {
-                  // map.setCenter(marker.getPosition());
                   infowindow.setContent(place.name);
                   infowindow.open(map, this);
                 });
@@ -421,6 +404,4 @@
 
       }
 
-      // init()
 
-// });
