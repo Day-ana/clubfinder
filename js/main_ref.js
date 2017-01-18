@@ -14,7 +14,7 @@
       var listBox = $('.club-info');
       var clubNames = [];
       var markers = [];
-      var iconBase = 'http://localhost:8888/final/images/';
+      var iconBase = 'https://day-ana.github.io/clubfinder/final/images/';
       var icons = {
         club: {
           icon: iconBase + 'club_icon.png'
