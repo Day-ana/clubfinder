@@ -206,10 +206,12 @@ body {
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  color:#fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    color: #fff;
+    width: 300px;
+    float: left;
 }
 .header h3 span{color:rgba(250, 0, 206, 1);}
 
@@ -262,6 +264,7 @@ body {
     padding-right: 0;
     padding-left: 0;
   }
+
   /* Space out the masthead */
   .header {
     margin-bottom: 30px;
@@ -274,12 +277,14 @@ body {
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
   /*body {background: #fff!}*/
+    #map{height: 350px!important}
+    .header h3{width: 100%}
     .jumbotron{height: 100%}
     .legend-info{width: 100%}
-    .lead .open{ position: absolute; right: -75px;}
+    .c-name{float:left; text-overflow: ellipsis; width: 80%!important;}
+    .lead .open{ position: absolute; right: 15px;}
     .lead.active.expanded .open{ position: absolute; right: -90px; border: 1px solid blue;}
 }
-
 
 #overlay{
 background: rgba(71, 0, 86, 0.87);
