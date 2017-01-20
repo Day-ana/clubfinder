@@ -281,9 +281,11 @@ body {
     .header h3{width: 100%}
     .jumbotron{height: 100%}
     .legend-info{width: 100%}
-    .c-name{float:left; text-overflow: ellipsis; width: 80%!important;}
+    .c-name{float:left;   white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-overflow: "…"; width: 80%!important;}
     .lead .open{ position: absolute; right: 15px;}
     .lead.active.expanded .open{ position: absolute; right: -90px; border: 1px solid blue;}
+    .lead.expanded .info{margin:32px 0 0 0px;}
+
 }
 
 #overlay{
