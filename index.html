@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,92 +10,80 @@
     <meta name="author" content="">
     <!-- <link rel="icon" href="favicon.ico"> -->
     <title>Club Finder</title>
-
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
-
     <!-- Custom styles for this template -->
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <!-- // <script src="assets/js/ie-emulation-modes-warning.js"></script> -->
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
-
+<body>
     <div class="container">
-
-      <div class="header clearfix">
-         <div class="col-lg-4">
-          <h3 class="text-muted"> </h3>
-        </div>       
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" id="get-loc"><a href="#"><i class="fa fa-location-arrow" aria-hidden="true"></i> Location</a></li>
-            <li role="presentation" id="get-clubs"><a href="#"><i class="fa fa-glass" aria-hidden="true"></i> Find Clubs</a></li>
-            <li role="presentation" id="get-random"><a href="#"><i class="fa fa-random" aria-hidden="true"></i> Random</a></li>
-            <li role="presentation" id="clear-markers"><a href="#">Clear</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="jumbotron clearfix">
-        <div id="overlay">
-          <div class='triangles'>
-              <div class='tri invert'></div>
-              <div class='tri invert'></div>
-              <div class='tri'></div>
-              <div class='tri invert'></div>
-              <div class='tri invert'></div>
-              <div class='tri'></div>
-              <div class='tri invert'></div>
-              <div class='tri'></div>
-              <div class='tri invert'></div>
-          </div> 
+        <div class="header clearfix">
+            <div class="col-lg-4">
+                <h3 class="text-muted">Club <span>Finder</span></h3>
+            </div>
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" id="get-clubs"><a href="#"><i class="fa fa-glass" aria-hidden="true"></i> Find Clubs</a></li>
+                    <li role="presentation" id="get-loc"><a href="#"><i class="fa fa-location-arrow" aria-hidden="true"></i> Location</a></li>
+                    <li role="presentation" id="get-random"><a href="#"><i class="fa fa-random" aria-hidden="true"></i> Random</a></li>
+                    <li role="presentation" id="clear-markers"><a href="#"><i class="fa fa-eraser" aria-hidden="true"></i> Clear</a></a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- <h1>Party Finder</h1> -->
-      <div id="map" class="col-lg-7 map-container">
-      </div>
-      <div class="col-lg-5 legend-info">
-        <span class="open" alt="Open Now!"></span> Open Now 
-      </div>
-      <div class="col-lg-5 club-info">
-        <p class="lead">lets find some clubs ◕‿◕</p>
-      </div>
-        
-      </div>
-
-      <footer class="footer">
-        <p>&copy;Made with &lt;3 by Dayana.</p>
-      </footer>
-
-    </div> <!-- /container -->
+        <div class="jumbotron clearfix">
+            <div id="overlay">
+                <div class='triangles'>
+                    <div class='tri invert'></div>
+                    <div class='tri invert'></div>
+                    <div class='tri'></div>
+                    <div class='tri invert'></div>
+                    <div class='tri invert'></div>
+                    <div class='tri'></div>
+                    <div class='tri invert'></div>
+                    <div class='tri'></div>
+                    <div class='tri invert'></div>
+                </div>
+            </div>
+            <!-- <h1>Party Finder</h1> -->
+            <div id="map" class="col-lg-7 map-container">
+            </div>
+            <div class="col-lg-5 legend-info">
+                <span class="open" alt="Open Now!"></span> Open Now
+            </div>
+            <div class="col-lg-5 club-info">
+                <div class="lead">lets find some clubs ◕‿◕</div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>&copy;Made with &lt;3 by Dayana.</p>
+        </footer>
+    </div>
+    <!-- /container -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-          <!-- jQuery -->
-
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIxEf_8J7-Tco6EKCzkUX3KIy3gJJO8XU&callback=initMap&libraries=places">
+    <!-- jQuery -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIxEf_8J7-Tco6EKCzkUX3KIy3gJJO8XU&callback=initMap&libraries=places">
     </script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/35c4b6a139.js"></script>
-    
     <script>
-document.write('<script src="http://' + (location.host || 'localhost')
-.split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-</script>
+    document.write('<script src="http://' + (location.host || 'localhost')
+        .split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
     <!-- // <script src="assets/js/ie10-viewport-bug-workaround.js"></script> -->
-  </body>
+</body>
+
 </html>

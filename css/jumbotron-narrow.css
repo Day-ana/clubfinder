@@ -1,295 +1,401 @@
 /* Space out content a bit */
+
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-
-.nav>li>a:focus, .nav>li>a:hover {
+.nav>li>a:focus,
+.nav>li>a:hover {
     text-decoration: none;
     background-color: #fa00ce;
 }
+
 .club-info {
-  height: 500px;
-  overflow: scroll;
+    height: 500px;
+    overflow: scroll;
 }
 
 .legend-info {
-  color: #fff;
-  float: left;
-  font-size: 12px;
-  padding: 15px;
+    color: #fff;
+    float: left;
+    font-size: 12px;
+    padding: 15px;
 }
 
 .legend-info .open {
-  margin: 3px 5px 0 10px!important;
-  float: left;
+    margin: 3px 5px 0 10px!important;
+    float: left;
 }
 
-
 .map-container {
-  border: 1px solid rgba(255, 0, 0, 0.53);
+    border: 1px solid rgba(255, 0, 0, 0.53);
 }
 
 .club-info {
-  height: 500px;
-  overflow: scroll;
+    height: 500px;
+    overflow: scroll;
 }
 
 .lead {
-  background: rgba(4, 4, 4, 0.21);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 10px;
-  transition: all .2s ease-in-out;
-  font-size: 16px;
-  height: 40px;
+    background: rgba(4, 4, 4, 0.21);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    font-size: 16px;
+    height: 40px;
 }
 
 .lead.active {
-  color: orange;
-  font-weight: 400;
-  transform: scale(1.05);
-  background: rgba(250, 0, 186, 0.6);
+    color: orange;
+    font-weight: 400;
+    transform: scale(1.05);
+    background: rgba(250, 0, 186, 0.6);
 }
 
 .lead .c-rating {
-  color: red;
-  display: inline-block;
-  float: right;
-  padding-right: 50px;
+    color: red;
+    display: inline-block;
+    float: right;
+    padding-right: 50px;
 }
 
 .lead #more {
-  display: inline-block;
-  float: right;
-  /*border: 1px solid #ff00b5;*/
-  width: 25px;
-  text-align: center;
-  /*border-radius: 50%;*/
-  background: rgba(17, 17, 17, 0.37);
+    display: inline-block;
+    float: right;
+    /*border: 1px solid #ff00b5;*/
+    width: 25px;
+    text-align: center;
+    /*border-radius: 50%;*/
+    background: rgba(17, 17, 17, 0.37);
 }
 
 .lead.expanded {
-  height: 200px;
+    height: 200px;
 }
 
 .lead .info {
-  display: none!important;
-  border: 1px solid blue
+    display: none!important;
+    border: 1px solid blue
 }
 
 .lead.expanded .info {
-  display: block!important;
-  border: 1px solid red;
-  margin: 0;
-  height: 140px;
+    display: block!important;
+    border: 1px solid red;
+    margin: 0;
+    height: 140px;
 }
 
 .header,
 .marketing,
 .footer {
-  padding-right: 15px;
-  padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  color: #fff;
-}
-
-.header h3 span {
-  color: rgba(250, 0, 206, 1);
-}
-
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-.jumbotron {
-  border: 1px solid #ff00d2;
-  background: rgba(203, 0, 247, 0.34);
-  /*border-bottom: 1px solid #e5e5e5;*/
-  padding: 20px 0;
-}
-
-
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
-}
-
-.marketing {
-  margin: 40px 0;
-}
-
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
-#overlay {
-  background: rgba(71, 0, 86, 0.87);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: none;
-  z-index: 1;
-}
-
-
-.map-container{
-  border: 1px solid rgba(255, 0, 0, 0.53);
-  height: 550px!important;
-}
-.club-info{
-  /*border: 1px solid blue;*/
-  height: 500px;
-  overflow: scroll;
-}
-
-.lead{
-  background: rgba(4, 4, 4, 0.21);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 10px;
-  transition: all .2s ease-in-out;
-  font-size: 16px;
-  height: 40px; 
-}
-.legend-info{color: #fff; float: left; font-size: 12px;padding: 15px;}
-.legend-info .open{margin:5px 0 0 60px; float: left;}
-.open{display: inline-block; width: 10px; height: 10px; width: 10px; border: 50%; border: 1px solid #17a703; border-radius: 50%;float: right;margin: 5px 40px 0 0;background: #03c103;}
-.lead .closed{ width: 10px; height: 10px; border: 50%; border: 1px solid red; background: #000}
-.lead.active{ color:orange; font-weight: 400; transform: scale(1.05); background:rgba(250, 0, 186, 0.6);}
-.lead .c-rating{color: red; display: inline-block; float: right; padding-right:50px; }
-.lead #more{ color: #fff; display:inline-block; float: right; width: 25px; text-align: center; background:rgba(17, 17, 17, 0.37); }
-.lead #more:hover{color:#fff;}
-.lead.expanded{
-     height: 200px;
-    /*transition: height 0.25s ease-in;*/
-}
-.lead .info{display: block;}
-.lead.expanded .info{display:block; border:1px solid #fa00ce; margin:10px 0 0 0px;height:139px;}
-.info-details { border-bottom:1px solid #fa00ce; padding:5px 0 8px 20px; font-size: 14px; color: #fff; line-height: 16px;}
-.info-details .fa-heart-o, .info-details .fa-heart{padding-right: 10px; float: right;}
-#heart{margin-top: -15px}
-.info-details:last-child {border-bottom:none; padding:5px 0 5px 20px};
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ff00d2;
-}
-/* Make the masthead heading the same height as the navigation */
 .header h3 {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
     color: #fff;
-    width: 300px;
+}
+
+.header h3 span {
+    color: rgba(250, 0, 206, 1);
+}
+
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+.jumbotron {
+    border: 1px solid #ff00d2;
+    background: rgba(203, 0, 247, 0.34);
+    /*border-bottom: 1px solid #e5e5e5;*/
+    padding: 20px 0;
+}
+
+.jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+}
+
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+#overlay {
+    background: rgba(71, 0, 86, 0.87);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 1;
+}
+
+.map-container {
+    border: 1px solid rgba(255, 0, 0, 0.53);
+    height: 550px!important;
+}
+
+.club-info {
+    /*border: 1px solid blue;*/
+    height: 500px;
+    overflow: scroll;
+}
+
+.open {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    width: 10px;
+    border: 50%;
+    border: 1px solid #17a703;
+    border-radius: 50%;
+    float: right;
+    margin: 5px 40px 0 0;
+    background: #03c103;
+}
+
+.lead .closed {
+    width: 10px;
+    height: 10px;
+    border: 50%;
+    border: 1px solid red;
+    background: #000
+}
+
+.lead.active {
+    color: orange;
+    font-weight: 400;
+    transform: scale(1.05);
+    background: rgba(250, 0, 186, 0.6);
+}
+
+.lead .c-rating {
+    color: red;
+    display: inline-block;
+    float: right;
+    padding-right: 50px;
+}
+
+.lead #more {
+    color: #fff;
+    display: inline-block;
+    float: right;
+    width: 25px;
+    text-align: center;
+    background: rgba(17, 17, 17, 0.37);
+}
+
+.lead #more:hover {
+    color: #fff;
+}
+
+.lead.expanded {
+    height: 200px;
+    /*transition: height 0.25s ease-in;*/
+}
+
+.lead .info {
+    display: block;
+}
+
+.lead.expanded .info {
+    display: block;
+    border: 1px solid #fa00ce;
+    margin: 10px 0 0 0px;
+    height: 139px;
+}
+
+.info-details {
+    border-bottom: 1px solid #fa00ce;
+    padding: 5px 0 8px 20px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 16px;
+}
+
+.info-details .fa-heart-o,
+.info-details .fa-heart {
+    padding-right: 10px;
+    float: right;
+}
+
+#heart {
+    margin-top: -15px
+}
+
+.info-details:last-child {
+    border-bottom: none;
+    padding: 5px 0 5px 20px
+}
+
+;
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.header,
+.marketing,
+.footer {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+/* Custom page header */
+
+.header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ff00d2;
+}
+
+
+/* Make the masthead heading the same height as the navigation */
+
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    color: #fff;
     float: left;
 }
-.header h3 span{color:rgba(250, 0, 206, 1);}
+
+.header h3 span {
+    color: rgba(250, 0, 206, 1);
+}
+
 
 /* Custom page footer */
+
 .footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #ff00d2;
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #ff00d2;
 }
+
 
 /* Customize container */
+
 @media (min-width: 768px) {
-  .container {
-    max-width: 100%;
-    height: 500px;
-  }
-  #map{
-    /*width: 60%;*/
-  }
+    .container {
+        max-width: 100%;
+        height: 500px;
+    }
+    #map {
+        /*width: 60%;*/
+    }
 }
+
 .container-narrow > hr {
-  margin: 30px 0;
+    margin: 30px 0;
 }
+
 
 /* Main marketing message and sign up button */
+
 .jumbotron {
-  border: 1px solid #ff00d2;
-  background: rgba(203, 0, 247, 0.34);
-  padding: 20px!important;
+    border: 1px solid #ff00d2;
+    background: rgba(203, 0, 247, 0.34);
+    padding: 20px!important;
 }
+
 .jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
+    padding: 14px 24px;
+    font-size: 21px;
 }
+
 
 /* Supporting marketing content */
+
 .marketing {
-  margin: 40px 0;
+    margin: 40px 0;
 }
+
 .marketing p + h4 {
-  margin-top: 28px;
+    margin-top: 28px;
 }
+
 
 /* Responsive: Portrait tablets and up */
+
 @media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    /*border-bottom: 0;*/
-  }
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        /*border-bottom: 0;*/
+    }
 }
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
-  /*body {background: #fff!}*/
-    #map{height: 350px!important}
-    .header h3{width: 100%}
-    .jumbotron{height: 100%}
-    .legend-info{width: 100%}
-    .c-name{float:left;   white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-overflow: "…"; width: 80%!important;}
-    .lead .open{ position: absolute; right: 15px;}
-    .lead.active.expanded .open{ position: absolute; right: -90px; border: 1px solid blue;}
-    .lead.expanded .info{margin:32px 0 0 0px;}
 
+/*iphone*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    /*body {background: #fff!}*/
+    #map {
+        height: 350px!important
+    }
+    .header h3 {
+        width: 100%
+    }
+    .jumbotron {
+        height: 100%
+    }
+    .legend-info {
+        width: 100%
+    }
+    .c-name {
+        float: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-overflow: "…";
+        width: 80%!important;
+    }
+    .lead .open {
+        position: absolute;
+        right: 15px;
+    }
+    .lead.active.expanded .open {
+        position: absolute;
+        right: -90px;
+        border: 1px solid blue;
+    }
+    .lead.expanded .info {
+        margin: 32px 0 0 0px;
+    }
 }
 
-#overlay{
-background: rgba(71, 0, 86, 0.87);
+#overlay {
+    background: rgba(71, 0, 86, 0.87);
     position: absolute;
     top: 0;
     left: 0;
@@ -300,123 +406,136 @@ background: rgba(71, 0, 86, 0.87);
 }
 
 @-webkit-keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  16.666% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 1;
+    }
+    16.666% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
 @-moz-keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  16.666% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 1;
+    }
+    16.666% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
 @keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  16.666% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 1;
+    }
+    16.666% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
 body {
-  background: #e4e4e5;
+    background: #e4e4e5;
 }
 
 .triangles {
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  height: 81px;
-  width: 90px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 81px;
+    width: 90px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
 }
 
 .tri {
-  position: absolute;
-  -webkit-animation: pulse 750ms ease-in infinite;
-  -moz-animation: pulse 750ms ease-in infinite;
-  animation: pulse 750ms ease-in infinite;
-  border-top: 27px solid #215A6D;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 0px;
+    position: absolute;
+    -webkit-animation: pulse 750ms ease-in infinite;
+    -moz-animation: pulse 750ms ease-in infinite;
+    animation: pulse 750ms ease-in infinite;
+    border-top: 27px solid #215A6D;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 0px;
 }
+
 .tri.invert {
-  border-top: 0px;
-  border-bottom: 27px solid #215A6D;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
+    border-top: 0px;
+    border-bottom: 27px solid #215A6D;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
 }
+
 .tri:nth-child(1) {
-  left: 30px;
+    left: 30px;
 }
+
 .tri:nth-child(2) {
-  left: 15px;
-  top: 27px;
-  -webkit-animation-delay: -125ms;
-  -moz-animation-delay: -125ms;
-  animation-delay: -125ms;
+    left: 15px;
+    top: 27px;
+    -webkit-animation-delay: -125ms;
+    -moz-animation-delay: -125ms;
+    animation-delay: -125ms;
 }
+
 .tri:nth-child(3) {
-  left: 30px;
-  top: 27px;
+    left: 30px;
+    top: 27px;
 }
+
 .tri:nth-child(4) {
-  left: 45px;
-  top: 27px;
-  -webkit-animation-delay: -625ms;
-  -moz-animation-delay: -625ms;
-  animation-delay: -625ms;
+    left: 45px;
+    top: 27px;
+    -webkit-animation-delay: -625ms;
+    -moz-animation-delay: -625ms;
+    animation-delay: -625ms;
 }
+
 .tri:nth-child(5) {
-  top: 54px;
-  -webkit-animation-delay: -250ms;
-  -moz-animation-delay: -250ms;
-  animation-delay: -250ms;
+    top: 54px;
+    -webkit-animation-delay: -250ms;
+    -moz-animation-delay: -250ms;
+    animation-delay: -250ms;
 }
+
 .tri:nth-child(6) {
-  top: 54px;
-  left: 15px;
-  -webkit-animation-delay: -250ms;
-  -moz-animation-delay: -250ms;
-  animation-delay: -250ms;
+    top: 54px;
+    left: 15px;
+    -webkit-animation-delay: -250ms;
+    -moz-animation-delay: -250ms;
+    animation-delay: -250ms;
 }
+
 .tri:nth-child(7) {
-  top: 54px;
-  left: 30px;
-  -webkit-animation-delay: -375ms;
-  -moz-animation-delay: -375ms;
-  animation-delay: -375ms;
+    top: 54px;
+    left: 30px;
+    -webkit-animation-delay: -375ms;
+    -moz-animation-delay: -375ms;
+    animation-delay: -375ms;
 }
+
 .tri:nth-child(8) {
-  top: 54px;
-  left: 45px;
-  -webkit-animation-delay: -500ms;
-  -moz-animation-delay: -500ms;
-  animation-delay: -500ms;
+    top: 54px;
+    left: 45px;
+    -webkit-animation-delay: -500ms;
+    -moz-animation-delay: -500ms;
+    animation-delay: -500ms;
 }
+
 .tri:nth-child(9) {
-  top: 54px;
-  left: 60px;
-  -webkit-animation-delay: -500ms;
-  -moz-animation-delay: -500ms;
-  animation-delay: -500ms;
+    top: 54px;
+    left: 60px;
+    -webkit-animation-delay: -500ms;
+    -moz-animation-delay: -500ms;
+    animation-delay: -500ms;
 }
